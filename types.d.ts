@@ -3,10 +3,10 @@
 
 import { Connection } from "mongoose";
 
-declare global {
-    var mongoose: {
-        conn: Connection | null;
-        promise: Promise<Connection> | null
+declare global { // it means I want to add something to the global scope of Node.js.
+    var mongoose: { // global variable - not mongoose library - This is our own object to store connection info
+        conn: Connection | null; // conn - stores the connection object if connection succeeds, otherwise it remains null.
+        promise: Promise<Connection> | null // promise stores a pending database connection - While MongoDB is connecting, we store the promise
     }
 }
 
