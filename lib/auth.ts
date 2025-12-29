@@ -35,7 +35,7 @@ export const authOptions:NextAuthOptions = {
        }
 
        return {
-        id: user._id.toStringify(),
+        id: user._id.toString(),
         email: user.email
        }
 
