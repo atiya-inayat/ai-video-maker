@@ -60,11 +60,11 @@ const RegisterPage = () => {
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
         />
-        <button type="submit">Register</button>
+        <button type="submit">SignUp</button>
       </form>
       <div>
         <p>
-          Already have an account? <a href="/login">Login</a>
+          Already have an account? <a href="/login">SignIn</a>
         </p>
       </div>
     </div>
