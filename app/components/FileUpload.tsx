@@ -1,13 +1,7 @@
 "use client"; // This component must be a client component
 
-import {
-  ImageKitAbortError,
-  ImageKitInvalidRequestError,
-  ImageKitServerError,
-  ImageKitUploadNetworkError,
-  upload,
-} from "@imagekit/next";
-import { useRef, useState } from "react";
+import { upload } from "@imagekit/next";
+import { useState } from "react";
 
 interface FileUploadProps {
   onSuccess: (res: any) => void;
